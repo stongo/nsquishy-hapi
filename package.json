@@ -1,0 +1,36 @@
+{
+  "name": "nsquishy",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "repository": "git://github.com/stongo/nsquishy",
+  "bugs": {
+    "url": "https://github.com/stongo/nsquishy/issues"
+  },
+  "main": "index",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "nsquishy": "^1.0.0"
+  },
+  "devDependencies": {
+    "lab": "^5.2.1",
+    "code": "^1.3.0"
+  },
+  "peerDependencies": {
+    "hapi": "8.x.x"
+  },
+  "keywords": [
+    "hapi",
+    "plugin",
+    "nsq",
+    "worker"
+  ]
+}
