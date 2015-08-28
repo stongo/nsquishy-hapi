@@ -41,7 +41,7 @@ var optionsNoTopic = {
 
 server.register([
     {
-        register: require('nsquishy'),
+        register: require('nsquishy-hapi'),
         options: options
         //options: optionsEtcd
         //options: optionsNsqd
@@ -122,6 +122,11 @@ On registration, `server.app.nsquishy.nsqReader` is assigned an initialized inst
 * `init` - initializes connection to nsq. Callback fires on `nsqd_connected` event. Automatically handles `err` and `nsqd_connected` events
 
 See nsqjs for full reader documentation
+
+### Plugin properties
+
+* `server.plugins['nsquishy-hapi'].topic`
+* `server.plugins['nsquishy-hapi'].channel`
 
 ## Testing
 
